@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import "./App.css";
 import { ThemeContext } from "./contexts/Theme";
-import ScrollToTop from "react-scroll-to-top";
+// import ScrollToTop from "react-scroll-to-top";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
@@ -20,7 +20,7 @@ function App() {
         <Skills />
         <Contact />
       </main>
-      <ScrollToTop smooth className="scroll-top" />
+      {/* <ScrollToTop smooth className="scroll-top" /> */}
       <Footer />
     </div>
   );
