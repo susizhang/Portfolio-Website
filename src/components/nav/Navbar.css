@@ -1,6 +1,7 @@
 .nav__list {
-  margin-right: 1.5em;
+  margin-right: 2em;
   display: flex;
+  align-items: center;
 }
 .nav__list-item {
   margin-left: 1.5em;
@@ -12,6 +13,14 @@
 
 .nav__theme {
   margin-top: 0.4em;
+}
+.nav-right-icon {
+  padding-left: 2em;
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-end;
+  margin-right: 1em;
+  border-left: 0.12em solid var(--clr-fg-separate);
 }
 
 @media (max-width: 600px) {
@@ -26,7 +35,9 @@
     height: 100%;
     z-index: 2;
   }
-
+  .nav-right-icon {
+    display: none;
+  }
   .nav__list-item {
     margin: 0.5em 0;
   }

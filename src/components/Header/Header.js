@@ -6,7 +6,15 @@ const Header = () => {
   const { homepage, title } = header;
   return (
     <header className="header center">
-      <h3>{homepage ? <Link to="/">{title}</Link> : title}</h3>
+      <h3>
+        {homepage ? (
+          <Link className="nav-title" to="/">
+            {title}
+          </Link>
+        ) : (
+          title
+        )}
+      </h3>
       <Navbar />
     </header>
   );

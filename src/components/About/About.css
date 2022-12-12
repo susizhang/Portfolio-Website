@@ -1,12 +1,15 @@
 .about {
   flex-direction: column;
   margin-top: 3em;
+  margin-bottom: 8em;
 }
 
 .about__name {
   color: var(--clr-primary);
 }
-
+.about_title_2 {
+  color: var(--clr-fg-alt-title2);
+}
 .about__role {
   margin-top: 1.2em;
 }

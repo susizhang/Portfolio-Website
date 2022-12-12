@@ -4,14 +4,22 @@ import Brightness2Icon from "@mui/icons-material/Brightness2";
 import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import { ThemeContext } from "../../contexts/Theme";
-import { contact, projects, skills } from "../../portfolio/PortfolioData";
+import {
+  about,
+  contact,
+  projects,
+  skills,
+} from "../../portfolio/PortfolioData";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext);
   const [showNavList, setShowNavList] = useState(false);
+  const { resume, social } = about;
 
   const toggleNavList = () => {
     setShowNavList(!showNavList);
@@ -58,14 +66,51 @@ const Navbar = () => {
           </li>
         ) : null}
       </ul>
-      <button
-        type="button"
-        onClick={toggleTheme}
-        className="btn btn--icon nav__theme"
-        aria-label="toggle theme"
-      >
-        {themeName === "dark" ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
-      </button>
+
+      <div className="nav-right-icon">
+        <button
+          type="button"
+          onClick={toggleTheme}
+          className="btn btn--icon nav__theme"
+          aria-label="toggle theme"
+        >
+          {themeName === "dark" ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
+        </button>
+        {social && (
+          <>
+            {social.github && (
+              <a
+                href={social.github}
+                aria-label="github"
+                className="btn btn--icon"
+              >
+                <GitHubIcon />
+              </a>
+            )}
+
+            {social.linkedin && (
+              <a
+                href={social.linkedin}
+                aria-label="linkedin"
+                className="btn btn--icon"
+              >
+                <LinkedInIcon />
+              </a>
+            )}
+          </>
+        )}
+      </div>
+      <ul>
+        {resume && (
+          <li className="nav__list-item">
+            <Link onClick={toggleNavList} to="/resume">
+              <span type="button" className="btn btn--outline">
+                Resume
+              </span>
+            </Link>
+          </li>
+        )}
+      </ul>
 
       <button
         type="button"

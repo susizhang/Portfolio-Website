@@ -5,6 +5,9 @@
   margin: 0 auto;
   justify-content: space-between;
 }
+.nav-title {
+  color: var(--clr-primary);
+}
 
 @media (max-width: 600px) {
   .header {

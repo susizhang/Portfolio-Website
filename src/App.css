@@ -9,17 +9,21 @@
   --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;
   --clr-fg: #555;
+  --clr-fg-separate: rgba(85, 85, 85, 0.107);
   --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
+  --clr-fg-alt-title2: rgba(68, 68, 68, 0.75);
+  --clr-primary: #fbac30;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .dark {
   --clr-bg: #23283e;
   --clr-bg-alt: #2a2f4c;
-  --clr-fg: #bdbddd;
+  --clr-fg: #8892b0;
+  --clr-fg-separate: #8892b03e;
   --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
+  --clr-fg-alt-title2: #cdcdffbb;
+  --clr-primary: #64ffda;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -73,7 +77,6 @@ main {
 
 .link--nav {
   color: var(--clr-fg);
-  text-transform: lowercase;
   font-weight: 500;
 }
 
@@ -87,7 +90,6 @@ main {
   padding: 0.8em 1.4em;
   font-weight: 500;
   font-size: 0.9rem;
-  text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
 }
 

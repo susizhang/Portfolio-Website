@@ -12,7 +12,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
   const [{ themeName }] = useContext(ThemeContext);
   return (
-    <div className={`${themeName} app`}>
+    <div id="top" className={`${themeName} app`}>
       <Header />
       <main>
         <About />
@@ -20,7 +20,7 @@ function App() {
         <Skills />
         <Contact />
       </main>
-      <ScrollToTop smooth />
+      <ScrollToTop smooth className="scroll-top" />
       <Footer />
     </div>
   );
