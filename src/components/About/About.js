@@ -6,15 +6,17 @@ const About = () => {
   const { name, role, description } = about;
 
   return (
-    <div className="about center">
-      {name && (
-        <h1>
-          Hi, I am <span className="about__name">{name}.</span>
-        </h1>
-      )}
+    <div className="about aboutPage ">
+      <div>
+        {name && (
+          <h1>
+            Hi, I am <span className="about__name">{name}.</span>
+          </h1>
+        )}
 
-      {role && <h2 className="about__role about_title_2">A {role}.</h2>}
-      <p className="about__desc">{description && description}</p>
+        {role && <h2 className="about__role about_title_2">A {role}.</h2>}
+        <pre className="about__desc">{description && description}</pre>
+      </div>
     </div>
   );
 };
