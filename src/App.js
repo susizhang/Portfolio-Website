@@ -8,12 +8,18 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [{ themeName }] = useContext(ThemeContext);
   return (
     <div id="top" className={`${themeName} app`}>
       <Header />
+      <Routes>
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <main>
         <About />
         <Projects />

@@ -12,7 +12,7 @@ import {
   about,
   contact,
   projects,
-  skills,
+  header,
 } from "../../portfolio/PortfolioData";
 import "./Navbar.css";
 
@@ -34,6 +34,14 @@ const Navbar = () => {
         style={{ display: showNavList ? "flex" : null }}
         className="nav__list"
       >
+        {
+          <li className="nav__list-item">
+            <Link className="link link--nav" onClick={toggleNavList} to="/">
+              Home
+            </Link>
+          </li>
+        }
+
         {projects.length ? (
           <li className="nav__list-item">
             <Link
@@ -46,14 +54,14 @@ const Navbar = () => {
           </li>
         ) : null}
 
-        {skills.length ? (
+        {about.description.length ? (
           <li className="nav__list-item">
             <Link
               onClick={toggleNavList}
               className="link link--nav"
-              to="/skills"
+              to="/about"
             >
-              Skills
+              About
             </Link>
           </li>
         ) : null}
