@@ -49,7 +49,7 @@ const Navbar = () => {
           </li>
         ) : null}
 
-        {about.description.length ? (
+        {about.name.length ? (
           <li className="nav__list-item">
             <Link
               onClick={toggleNavList}

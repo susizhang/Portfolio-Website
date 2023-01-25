@@ -6,11 +6,11 @@
 .aboutPage {
   /* align-items: flex-start; */
   max-width: 1100px;
-  margin: 5em auto 0;
+  margin: 3em auto 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
   grid-gap: 2em;
-  height: 60vh;
+  height: 80vh;
 }
 
 .about__name {
@@ -24,8 +24,10 @@
 }
 
 .about__desc {
-  font-size: 1rem;
-  white-space: pre-wrap; /* css-3 */
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 
 .about__desc,
