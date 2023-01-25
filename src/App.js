@@ -5,10 +5,10 @@ import { ThemeContext } from "./contexts/Theme";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home/Home";
 
 function App() {
   const [{ themeName }] = useContext(ThemeContext);
@@ -16,16 +16,12 @@ function App() {
     <div id="top" className={`${themeName} app`}>
       <Header />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <main>
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-      </main>
+
       {/* <ScrollToTop smooth className="scroll-top" /> */}
       <Footer />
     </div>

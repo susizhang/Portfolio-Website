@@ -8,12 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import { ThemeContext } from "../../contexts/Theme";
-import {
-  about,
-  contact,
-  projects,
-  header,
-} from "../../portfolio/PortfolioData";
+import { about, contact, projects } from "../../portfolio/PortfolioData";
 import "./Navbar.css";
 
 const Navbar = () => {
