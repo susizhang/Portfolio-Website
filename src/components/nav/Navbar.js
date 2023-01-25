@@ -24,6 +24,10 @@ const Navbar = () => {
   const toggleNavList = () => {
     setShowNavList(!showNavList);
   };
+  const jumpTo = (url) => {
+    const newTab = window.open("_black");
+    newTab.location.href = url;
+  };
   return (
     <nav className="center nav">
       <ul
@@ -35,7 +39,7 @@ const Navbar = () => {
             <Link
               className="link link--nav"
               onClick={toggleNavList}
-              to="/projects"
+              to="projects"
             >
               Projects
             </Link>
@@ -79,38 +83,42 @@ const Navbar = () => {
         {social && (
           <>
             {social.github && (
-              <a
-                href={social.github}
+              <button
+                onClick={() => {
+                  jumpTo(social.github);
+                }}
                 aria-label="github"
                 className="btn btn--icon"
               >
                 <GitHubIcon />
-              </a>
+              </button>
             )}
 
             {social.linkedin && (
-              <a
-                href={social.linkedin}
+              <button
+                onClick={() => {
+                  jumpTo(social.linkedin);
+                }}
                 aria-label="linkedin"
                 className="btn btn--icon"
               >
                 <LinkedInIcon />
-              </a>
+              </button>
             )}
           </>
         )}
       </div>
-      <ul>
-        {resume && (
-          <li className="nav__list-item">
-            <Link onClick={toggleNavList} to="/resume">
-              <span type="button" className="btn btn--outline">
-                Resume
-              </span>
-            </Link>
-          </li>
-        )}
-      </ul>
+
+      {resume && (
+        <button
+          onClick={() => {
+            jumpTo(about.resume);
+          }}
+          className="btn btn--outline"
+        >
+          Resume
+        </button>
+      )}
 
       <button
         type="button"
