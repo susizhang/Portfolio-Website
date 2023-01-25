@@ -23,7 +23,8 @@ const projects = [
     description:
       "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
     stack: ["SASS", "TypeScript", "React"],
-    sourceCode: "#",
+    sourceCode:
+      "https://github.com/susizhang/German_Mindmap_Dictionary_frontend",
     livePreview: "#",
     imageUrl: "#",
   },

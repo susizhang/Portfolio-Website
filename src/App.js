@@ -12,12 +12,17 @@ import Home from "./components/Home/Home";
 
 function App() {
   const [{ themeName }] = useContext(ThemeContext);
+  const jumpTo = (url) => {
+    const newTab = window.open("_black");
+    newTab.location.href = url;
+  };
+
   return (
     <div id="top" className={`${themeName} app`}>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/" element={<Home jumpTo={jumpTo} />} />
+        <Route path="/projects" element={<Projects jumpTo={jumpTo} />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

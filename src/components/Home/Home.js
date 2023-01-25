@@ -3,7 +3,7 @@ import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 
-const Home = () => {
+const Home = ({ jumpTo }) => {
   const { name, role } = about;
   return (
     <main>
@@ -17,7 +17,7 @@ const Home = () => {
         {role && <h2 className="about__role about_title_2">A {role}.</h2>}
       </div>
 
-      <Projects />
+      <Projects jumpTo={jumpTo} />
       <Skills />
       <Contact />
     </main>

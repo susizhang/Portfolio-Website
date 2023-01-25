@@ -4,7 +4,7 @@ import ProjectContainer from "../ProjectContainer/ProjectContainer";
 
 import "./Projects.css";
 
-const Projects = () => {
+const Projects = ({ jumpTo }) => {
   if (!projects.length) return null;
 
   return (
@@ -12,7 +12,7 @@ const Projects = () => {
       <h2 className="section__title">Projects</h2>
       <div className="projects__grid">
         {projects.map((project) => (
-          <ProjectContainer key={uniqid()} project={project} />
+          <ProjectContainer key={uniqid()} project={project} jumpTo={jumpTo} />
         ))}
       </div>
     </section>
