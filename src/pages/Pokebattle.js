@@ -10,7 +10,7 @@ const Pokebattle = () => {
 
       <header className="projects-header">
         <h1>PokeBattle game</h1>
-        <br />
+
         <h4 className="web-link-container">
           <a
             href="https://github.com/susizhang/pokemon_frontend"
@@ -39,8 +39,7 @@ const Pokebattle = () => {
             Pokebattle game
           </a>
         </h4>
-        <br />
-        <br />
+
         <p className="text">
           This is a full-stack Pokefight application using React, MongoDB,
           React-Router and Tailwindcss.

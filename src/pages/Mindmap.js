@@ -9,7 +9,7 @@ const Mindmap = () => {
       <ProjectsLinks />
       <header className="projects-header">
         <h1>German Mindmap Dictionary</h1>
-        <br />
+
         <h4 className="web-link-container">
           <a
             href="https://github.com/susizhang/German_Mindmap_Dictionary_frontend"
@@ -38,8 +38,6 @@ const Mindmap = () => {
             German Mindmap Dictionary
           </a>
         </h4>
-        <br />
-        <br />
 
         <p className="text">
           This project is trying to visualize a German dictionary as

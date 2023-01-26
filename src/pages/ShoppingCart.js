@@ -10,8 +10,8 @@ const ShoppingCart = () => {
       <ProjectsLinks />
 
       <header className="projects-header">
-        <h1>Shopping Cart Typescript</h1>
-        <br />
+        <h1 >Shopping Cart Typescript</h1>
+
         <h4 className="web-link-container">
           <a
             href="https://github.com/susizhang/React-ts-Shopping-Cart"
@@ -39,8 +39,7 @@ const ShoppingCart = () => {
             Shopping Cart Typescript
           </a>
         </h4>
-        <br />
-        <br />
+
         <p className="text">
           This project is a fully functional shopping cart using Vie,React,
           TypeScript, and Bootstrap.

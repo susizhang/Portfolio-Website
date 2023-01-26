@@ -35,6 +35,7 @@
 .web-link-container {
   display: flex;
   gap: 0.5em;
+  margin: 1.5em auto;
 }
 .text {
   font-size: 1.3em;
