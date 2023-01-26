@@ -1,5 +1,5 @@
 .project {
-  padding: 2em;
+  padding: 1em;
   margin: 0 auto;
   text-align: center;
   box-shadow: var(--shadow);
@@ -12,6 +12,7 @@
 
 .project__description {
   margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 .project__stack {
@@ -30,4 +31,10 @@
 
 .project .link--icon {
   margin-left: 0.5em;
+}
+
+.project-img {
+  width: 320px;
+  height: 200px;
+  margin-bottom: 20px;
 }
