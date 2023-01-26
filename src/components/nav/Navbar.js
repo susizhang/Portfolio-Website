@@ -10,6 +10,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { ThemeContext } from "../../contexts/Theme";
 import { about, contact, projects } from "../../portfolio/PortfolioData";
 import "./Navbar.css";
+import Pdf from "../../portfolio/Susi Zhang resume (English).pdf";
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext);
@@ -113,14 +114,14 @@ const Navbar = () => {
       </div>
 
       {resume && (
-        <button
-          onClick={() => {
-            jumpTo(about.resume);
-          }}
+        <a
+          href={Pdf}
+          target="_blank"
+          rel="noreferrer"
           className="btn btn--outline"
         >
           Resume
-        </button>
+        </a>
       )}
 
       <button

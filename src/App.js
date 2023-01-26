@@ -13,7 +13,7 @@ import Home from "./components/Home/Home";
 function App() {
   const [{ themeName }] = useContext(ThemeContext);
   const jumpTo = (url) => {
-    const newTab = window.open("_black");
+    const newTab = window.open("_blank");
     newTab.location.href = url;
   };
 
