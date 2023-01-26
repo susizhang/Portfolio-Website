@@ -1,10 +1,9 @@
 import { useContext } from "react";
 import "./App.css";
 import { ThemeContext } from "./contexts/Theme";
-// import ScrollToTop from "react-scroll-to-top";
+import ScrollToTop from "react-scroll-to-top";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
@@ -33,7 +32,7 @@ function App() {
         <Route path="/Pokebattle" element={<Pokebattle />} />
       </Routes>
 
-      {/* <ScrollToTop smooth className="scroll-top" /> */}
+      <ScrollToTop smooth className="scroll-top" />
       <Footer />
     </div>
   );
