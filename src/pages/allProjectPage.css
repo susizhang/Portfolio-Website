@@ -30,7 +30,7 @@
 
 @media (max-width: 1120px) {
   .projects-img {
-    width: 45em;
+    width: 55em;
   }
 
   .project-btn {
@@ -40,6 +40,27 @@
     overflow: hidden;
     z-index: 1;
     width: 10em;
+    height: 6em;
+  }
+}
+@media (max-width: 760px) {
+  .projects-img {
+    width: 35em;
+  }
+}
+
+@media (max-width: 375px) {
+  .projects-img {
+    width: 21em;
+  }
+
+  .project-btn {
+    color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 7.5em;
     height: 6em;
   }
 }
