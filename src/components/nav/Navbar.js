@@ -43,7 +43,7 @@ const Navbar = () => {
             <Link
               className="link link--nav"
               onClick={toggleNavList}
-              to="projects"
+              to="/german-mindmap-dictionary"
             >
               Projects
             </Link>

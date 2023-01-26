@@ -25,7 +25,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home jumpTo={jumpTo} />} />
-        <Route path="/projects" element={<Projects jumpTo={jumpTo} />} />
+        <Route path="/german-mindmap-dictionary" element={<Mindmap />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/german-mindmap-dictionary" element={<Mindmap />} />
