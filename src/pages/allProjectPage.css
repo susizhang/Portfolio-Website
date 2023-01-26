@@ -32,4 +32,14 @@
   .projects-img {
     width: 45em;
   }
+
+  .project-btn {
+    color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 10em;
+    height: 6em;
+  }
 }
