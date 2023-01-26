@@ -2,6 +2,7 @@ import ProjectsLinks from "./ProjectsLinks";
 import "./allProjectPage.css";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
+import LaunchIcon from "@mui/icons-material/Launch";
 
 const ShoppingCart = () => {
   return (
@@ -9,9 +10,9 @@ const ShoppingCart = () => {
       <ProjectsLinks />
 
       <header className="projects-header">
-        <h1>German Mindmap Dictionary</h1>
+        <h1>Shopping Cart Typescript</h1>
         <br />
-        <h4>
+        <h4 className="web-link-container">
           <a
             href="https://github.com/susizhang/React-ts-Shopping-Cart"
             target="_blank"
@@ -19,19 +20,33 @@ const ShoppingCart = () => {
             aria-label="live preview"
           >
             <GitHubIcon />
-            Github page
+          </a>
+          <a
+            href="https://shoppingcartts.netlify.app/store"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="live preview"
+          >
+            <LaunchIcon />
+          </a>
+          <a
+            href="https://shoppingcartts.netlify.app/store"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="live preview"
+            className="website-link"
+          >
+            Shopping Cart Typescript
           </a>
         </h4>
         <br />
         <br />
-        <p>
-          A visual way to make learning German easier, funnier and more
-          efficient.
+        <p className="text">
+          This project is a fully functional shopping cart using Vie,React,
+          TypeScript, and Bootstrap.
         </p>
-        <p>
-          This project is trying to visualize a German dictionary as mindmaps,
-          so that German learners can learn German words easier, faster and more
-          effectively!
+        <p className="text">
+          Users can add, increase, decrease, delete products to Shopping Cart.
         </p>
       </header>
       <main>

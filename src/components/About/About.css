@@ -42,6 +42,9 @@
 .about .btn--outline {
   margin-right: 1em;
 }
+.about-title {
+  color: var(--clr-primary);
+}
 
 @media (max-width: 600px) {
   .app .about {

@@ -9,9 +9,9 @@ const Pokebattle = () => {
       <ProjectsLinks />
 
       <header className="projects-header">
-        <h1>German Mindmap Dictionary</h1>
+        <h1>PokeBattle game</h1>
         <br />
-        <h4>
+        <h4 className="web-link-container">
           <a
             href="https://github.com/susizhang/pokemon_frontend"
             target="_blank"
@@ -28,20 +28,24 @@ const Pokebattle = () => {
             aria-label="live preview"
           >
             <LaunchIcon />
+          </a>
+          <a
+            href="https://pokefightgame.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="live preview"
+            className="website-link"
+          >
             Pokebattle game
           </a>
         </h4>
         <br />
         <br />
-        <p>
-          A visual way to make learning German easier, funnier and more
-          efficient.
+        <p className="text">
+          This is a full-stack Pokefight application using React, MongoDB,
+          React-Router and Tailwindcss.
         </p>
-        <p>
-          This project is trying to visualize a German dictionary as mindmaps,
-          so that German learners can learn German words easier, faster and more
-          effectively!
-        </p>
+        <p className="text">User can also check Battle history.</p>
       </header>
       <main>
         <img src="/imgs/pokefight .png" alt="" className="projects-img" />

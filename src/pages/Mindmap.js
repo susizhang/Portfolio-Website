@@ -10,7 +10,7 @@ const Mindmap = () => {
       <header className="projects-header">
         <h1>German Mindmap Dictionary</h1>
         <br />
-        <h4>
+        <h4 className="web-link-container">
           <a
             href="https://github.com/susizhang/German_Mindmap_Dictionary_frontend"
             target="_blank"
@@ -27,19 +27,27 @@ const Mindmap = () => {
             aria-label="live preview"
           >
             <LaunchIcon />
-            german-dictionary-mindmap
+          </a>
+          <a
+            href="https://german-dictionary-mindmap.netlify.app/home"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="live preview"
+            className="website-link"
+          >
+            German Mindmap Dictionary
           </a>
         </h4>
         <br />
         <br />
-        <p>
+
+        <p className="text">
+          This project is trying to visualize a German dictionary as
+          <span className="text-span"> mindmaps</span> .
+        </p>
+        <p className="text">
           A visual way to make learning German easier, funnier and more
           efficient.
-        </p>
-        <p>
-          This project is trying to visualize a German dictionary as mindmaps,
-          so that German learners can learn German words easier, faster and more
-          effectively!
         </p>
       </header>
       <main>

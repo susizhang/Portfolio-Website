@@ -31,7 +31,7 @@ const ProjectsLinks = () => {
           color: isActive ? "var(--clr-bg)" : "var(--clr-primary)",
         })}
       >
-        Pokebattle game
+        PokeBattle game
       </NavLink>
     </div>
   );
