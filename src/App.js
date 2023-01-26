@@ -9,6 +9,9 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
+import Mindmap from "./pages/Mindmap";
+import ShoppingCart from "./pages/ShoppingCart";
+import Pokebattle from "./pages/Pokebattle";
 
 function App() {
   const [{ themeName }] = useContext(ThemeContext);
@@ -25,6 +28,9 @@ function App() {
         <Route path="/projects" element={<Projects jumpTo={jumpTo} />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/german-mindmap-dictionary" element={<Mindmap />} />
+        <Route path="/Shopping-Cart" element={<ShoppingCart />} />
+        <Route path="/Pokebattle" element={<Pokebattle />} />
       </Routes>
 
       {/* <ScrollToTop smooth className="scroll-top" /> */}

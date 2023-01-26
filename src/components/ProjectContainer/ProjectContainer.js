@@ -1,4 +1,3 @@
-import uniqid from "uniqid";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 import "./ProjectContainer.css";
@@ -27,6 +26,8 @@ const ProjectContainer = ({ project, jumpTo }) => {
       {project.livePreview && (
         <a
           href={project.livePreview}
+          target="_blank"
+          rel="noreferrer"
           aria-label="live preview"
           className="link link--icon"
         >
