@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
   grid-gap: 2em;
-  height: 80vh;
+  height: 1100px;
 }
 
 .about__name {
@@ -47,7 +47,9 @@
   padding: 15px 0;
   font-weight: 500;
 }
-
+.text {
+  letter-spacing: 0.5px;
+}
 @media (max-width: 600px) {
   .app .about {
     align-items: flex-start;

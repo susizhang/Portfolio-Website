@@ -17,14 +17,14 @@ const About = () => {
         {role && <h2 className="about__role about_title_2">A {role}.</h2>}
 
         <div className="about__desc">
-          <h5>{description.title1}</h5>
-          <p>{description.paragraph1}</p>
-          <p className="about-title">{description.title2}</p>
-          <p>{description.paragraph3}</p>
-          <p>{description.paragraph4}</p>
-          <p>{description.paragraph5}</p>
-          <p>{description.paragraph6}</p>
-          <p>{description.paragraph7}</p>
+          <h5 className="text">{description.title1}</h5>
+          <p className="text">{description.paragraph1}</p>
+          <p className="about-title text">{description.title2}</p>
+          <p className="text">{description.paragraph3}</p>
+          <p className="text">{description.paragraph4}</p>
+          <p className="text">{description.paragraph5}</p>
+          <p className="text">{description.paragraph6}</p>
+          <p className="text">{description.paragraph7}</p>
         </div>
 
         {/* <pre className="about__desc">{description && description}</pre> */}
