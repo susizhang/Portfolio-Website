@@ -27,7 +27,7 @@
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 20px;
 }
 
 .about__desc,
@@ -44,6 +44,8 @@
 }
 .about-title {
   color: var(--clr-primary);
+  padding: 15px 0;
+  font-weight: 500;
 }
 
 @media (max-width: 600px) {

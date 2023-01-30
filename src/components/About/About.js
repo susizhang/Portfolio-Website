@@ -23,7 +23,7 @@ const About = () => {
           <p>{description.paragraph3}</p>
           <p>{description.paragraph4}</p>
           <p>{description.paragraph5}</p>
-          <p className="about-title">{description.paragraph6}</p>
+          <p>{description.paragraph6}</p>
           <p>{description.paragraph7}</p>
         </div>
 
