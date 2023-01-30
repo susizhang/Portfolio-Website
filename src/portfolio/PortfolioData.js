@@ -11,7 +11,7 @@ const about = {
     paragraph1:
       " I am from China, where I went to university and worked for 5 years before I moved to Germany to live in Bayern in 2021. To learn new skills, knowledge and to explore different places is what I enjoy. I have traveled to more than 15 countries. ",
     title2:
-      " Currently, I am looking for a Fronted web programming or full-stack web programming job that can combine using my UX-UI design work experience. ",
+      " Currently, I am looking for a Frontend web programming or full-stack web programming job that can combine using my UX-UI design work experience. ",
 
     paragraph3:
       " 1) When I was working at Unilever China in 2014, I learned about UX-UI as a career and I found it very interesting and fascinating. Then I went to UX-UI classes every day after work. This also led me to a successful job in UX-UI 3 months later, and it lasted until I came to Germany. ",
