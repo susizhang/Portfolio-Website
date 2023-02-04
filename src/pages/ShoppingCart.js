@@ -10,7 +10,7 @@ const ShoppingCart = () => {
       <ProjectsLinks />
 
       <header className="projects-header">
-        <h1 >Shopping Cart Typescript</h1>
+        <h1>Shopping Cart Typescript</h1>
 
         <h4 className="web-link-container">
           <a
@@ -41,7 +41,7 @@ const ShoppingCart = () => {
         </h4>
 
         <p className="text">
-          This project is a fully functional shopping cart using Vie,React,
+          This project is a fully functional shopping cart using Vite,React,
           TypeScript, and Bootstrap.
         </p>
         <p className="text">
